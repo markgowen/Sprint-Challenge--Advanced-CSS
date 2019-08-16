@@ -160,44 +160,6 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-nav {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1% 0;
-  margin: auto;
-  background-color: #F6F6F6;
-}
-nav .navBar {
-  max-width: 800px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  margin: auto;
-}
-nav .navBar h1 {
-  font-size: 4rem;
-  padding: 5% 0;
-}
-nav .navBar .navLinks {
-  width: 50%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-nav .navBar .navLinks a {
-  text-decoration: none;
-  color: black;
-  font-size: 1.6rem;
-}
-@media (max-width: 500px) {
-  nav .navBar .navLinks {
-    width: 80%;
-  }
-}
 .home .intro h2 {
   padding: 15px;
 }

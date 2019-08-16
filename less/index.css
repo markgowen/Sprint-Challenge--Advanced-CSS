@@ -135,7 +135,7 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
+  color: #5e6164;
 }
 h1,
 h2,
@@ -143,7 +143,7 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
-  color: #23293B;
+  color: #23293b;
 }
 h2 {
   font-size: 3.2rem;
@@ -159,6 +159,48 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 0;
+  margin: auto;
+  background-color: #f6f6f6;
+}
+nav .navBar {
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+}
+nav .navBar h1 {
+  font-size: 4rem;
+  padding: 5% 0;
+}
+nav .navBar .navLinks {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav .navBar .navLinks a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  nav .navBar .navLinks {
+    width: 80%;
+  }
+}
+.home .intro img {
+  border-radius: 10px;
+  width: 100%;
 }
 .home .intro h2 {
   padding: 15px;
@@ -176,6 +218,13 @@ p {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images img {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -202,11 +251,27 @@ p {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-img {
+.home .walk .walk-text .btn {
+  background-color: #22283a;
+  color: white;
+  width: 25%;
+  cursor: button;
+  font-size: 1.6rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+}
+.home .walk .walk-text .btn:hover {
+  color: #22283a;
+  background-color: white;
+}
+.home .walk-img {
   width: 46%;
   margin-left: 4%;
 }
-.home .walk .walk-img img {
+.home .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;

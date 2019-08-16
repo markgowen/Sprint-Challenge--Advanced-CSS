@@ -1,5 +1,5 @@
 // Mixins Here
-@mobile: ~'(max-width: 500px)';
+@phone: ~'(max-width: 500px)';
 
 .flex(@justify, @align) {
   display: flex;
@@ -16,4 +16,9 @@
   border-radius: 5px;
   .flex(center, center);
   padding: 2%;
+
+  &:hover {
+      color: @btn-bg-color;
+      background-color: @color;
+  }
 }

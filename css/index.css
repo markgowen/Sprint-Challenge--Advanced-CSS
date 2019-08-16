@@ -275,7 +275,7 @@ nav .navBar .navLinks a {
 .home .walk .walk-text .btn {
   background-color: #22283a;
   color: white;
-  width: 90%;
+  width: 25%;
   cursor: button;
   font-size: 1.6rem;
   border-radius: 5px;
@@ -283,6 +283,10 @@ nav .navBar .navLinks a {
   justify-content: center;
   align-items: center;
   padding: 2%;
+}
+.home .walk .walk-text .btn:hover {
+  color: #22283a;
+  background-color: white;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {

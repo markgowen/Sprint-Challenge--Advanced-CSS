@@ -1,1 +1,36 @@
 // Navigation code here
+nav {
+  width: 100%;
+  .flex(space-between, center);
+  padding: 1% 0;
+  margin: auto;
+  background-color: @nav-bg;
+
+  .navBar {
+    max-width: 800px;
+    width: 100%;
+    .flex(space-between, center);
+    flex-direction: column;
+    margin: auto;
+
+    h1 {
+      font-size: 4rem;
+      padding: 5% 0;
+    } //closes h
+
+    .navLinks {
+      width: 50%;
+      .flex(space-around, center);
+
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.6rem;
+      } //closes tags
+
+      @media @mobile {
+        width: 80%;
+      } //closes navLinks media query
+    } //closes navLinks
+  } //closes navBar
+} //closes nav
